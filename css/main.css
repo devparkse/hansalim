@@ -42,6 +42,9 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+/* 타이틀 레이아웃 */
+/* 제품 기본 레이아웃 */
+/* 섹션 레이아웃 */
 /* 레이아웃 */
 .wrap {
   position: relative;
@@ -49,6 +52,133 @@ body {
 }
 /* 상단 */
 .header {
+  position: relative;
+  display: block;
+  z-index: 9999;
+}
+.header-top {
+  position: relative;
+  display: block;
+  padding: 30px 0;
+  background: greenyellow;
+}
+.header-top-left {
+  position: relative;
+  display: block;
+  float: left;
+  /* inline 코딩 엔터키 공백 생기는 거 제거 */
+  font-size: 0;
+  letter-spacing: 0;
+}
+.logo {
+  position: relative;
+  display: inline-block;
+  margin-right: 18px;
+}
+.bt-schedule {
+  position: relative;
+  display: inline-block;
+  /* h-t-l font-size: 0 이라서 넣어주기 */
+  font-size: 13px;
+  color: #666;
+  border: 0;
+  /* 투명 */
+  background: transparent;
+  cursor: pointer;
+  /* 인라인블락만 가능함. 세로위치 조정 */
+  vertical-align: -3px;
+}
+.bt-schedule img {
+  vertical-align: -3px;
+}
+
+.header-top-right {
+  position: relative;
+  display: block;
+  float: right;
+  padding-top: 3px;
+}
+.track {
+  position: relative;
+  display: inline-block;
+}
+.member-list {
+  position: relative;
+  display: inline-block;
+  vertical-align: -9px;
+}
+.member-list > li {
+  position: relative;
+  display: block;
+  float: left;
+  padding: 0 10px;
+}
+.member-list > li::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 7px;
+  width: 1px;
+  height: 8px;
+  background: #bbb;
+}
+.member-list > li:last-child {
+  padding-right: 0;
+}
+.member-list > li:last-child::after {
+  content: none;
+}
+.member-list > li > a {
+  position: relative;
+  display: block;
+  font-size: 13px;
+  color: #666;
+}
+/* .center-more 는 js 연동 */
+.center-more {
+  padding-right: 15px;
+}
+.center-more::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 10px;
+  height: 6px;
+  background: url("../images/icoMyMenu.png") no-repeat;
+  background-position: 0px 0px;
+}
+.center-more:hover::after {
+  background-position: 0px -6px;
+}
+.center-list {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25px;
+  display: block;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+  z-index: 1;
+}
+.center-list > li {
+  position: relative;
+  display: block;
+}
+.center-list > li > a {
+  position: relative;
+  display: block;
+  color: #666;
+  font-size: 13px;
+  /* 줄내림 하지 않음. */
+  white-space: nowrap;
+}
+
+.header-main {
   position: relative;
   display: block;
 }
