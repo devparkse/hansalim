@@ -81,6 +81,10 @@ body.active {
   margin-top: 8px;
   letter-spacing: -0.8px;
 }
+.modal-notice span a {
+  color: #f57584;
+  font-weight: 700;
+}
 
 /* swiper 기본 셋팅 */
 .swiper {
